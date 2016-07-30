@@ -11,4 +11,4 @@ ADD . /var/hondana
 WORKDIR /var/hondana
 RUN gem install bundler --no-document \
   && bundle install \
-  && librarian-puppet install
+  && bundle exec librarian-puppet install

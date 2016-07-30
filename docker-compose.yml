@@ -1,0 +1,10 @@
+version: '2'
+services:
+  all:
+    build: .
+    command: /sbin/init
+    volumes:
+      - .:/var/hondana
+    ports:
+      - '2222:22'
+      - '8080:80'
